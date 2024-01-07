@@ -458,7 +458,7 @@ AutoPlay.bestBuy = function() {
   if ((Game.resets && Game.ascensionMode!=1 &&
       Game.isMinigameReady(Game.Objects["Temple"]) &&
       Game.Objects["Temple"].minigame.slot[0]==10 && // Rigidel is in slot 0
-      Game.BuildingsOwned%10==0  && (AutoPlay.now-Game.startDate) > 2*60*1000)
+      (AutoPlay.now-Game.startDate) > 2*60*1000)
      || AutoPlay.buy10){
     // if owned % 10 != 0, will just buy one
     buy_amt = 10;
